@@ -62,7 +62,7 @@ func main() {
         }
     }()
 
-    <-quit
+    // <-quit
     fmt.Println("Shutting down server...")
 
     ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)

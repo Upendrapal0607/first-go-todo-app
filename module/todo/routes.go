@@ -26,7 +26,7 @@ func Routes(todoRepo *model.TodoRepository) chi.Router {
 
     r.Post("/todos", createTodoHandler.CreateTodo)
     r.Get("/todos", getTodoHandler.GetAllTodos)
-    r.Get("/todos/{id}", getTodoByIdHandler.GetSingleTodo)
+    r.Get("todos/{id}", getTodoByIdHandler.GetSingleTodo)
     r.Put("/todos/{id}", updateTodoHandler.UpdateTodo)
     r.Delete("/todos/{id}", deleteTodoHandler.DeleteTodo)
 
